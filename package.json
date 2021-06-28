@@ -23,7 +23,8 @@
     "reactstrap": "^8.9.0",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "concurrently": "^6.0.0",
@@ -32,7 +33,7 @@
   "scripts": {
     "start:dev": "concurrently \"nodemon --ignore 'client/*' --watch * \" --exec node index.js \"cd client && npm run start \"",
     "start": "node index.js",
-    "test": "npm run test",
+    "test": "jest",
     "seed": "node seeder/index.js"
   },
   "author": "",

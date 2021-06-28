@@ -19,8 +19,6 @@ export default function({onAddUser, targetUser}) {
             role_id: targetUser && targetUser.role_id
         }
        
-        console.log("Data Send");
-        console.log(dataSend)
         onAddUser && onAddUser(dataSend)
     }
 
