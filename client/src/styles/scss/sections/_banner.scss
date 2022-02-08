@@ -1,0 +1,27 @@
+.banner {
+    height: 495px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3 {
+        background-color: white;
+        width: 35%;
+        padding: 20px 0;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 25px;
+        padding-top: auto;
+        font-family:  'Vollkorn', serif; 
+        
+        @include media-breakpoint-between(0, lg) {
+            width: 50%;
+        }
+        @include media-breakpoint-between(0, sm) {
+            width: 80%;
+        }
+    }
+}
+
+.home .banner {
+    margin-top: 80px;
+}

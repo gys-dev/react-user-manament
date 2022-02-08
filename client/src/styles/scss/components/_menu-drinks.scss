@@ -1,0 +1,119 @@
+.menu-drinks {
+    @include media-breakpoint-between(0, xl) {
+        // your code
+        width: 80%;
+        margin: 0 auto;
+    }
+    @include media-breakpoint-between(0, md) {
+        // your code
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.drink {
+    text-align: center;
+    margin: 0 auto;
+}
+.drink-name {
+    font-weight: 400;
+    font-size: 20px;
+}
+.drink-image {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 442px;
+    object-fit: contain;
+
+    @include media-breakpoint-between(0, sm) {
+        max-width: 70%;
+    }
+
+}
+
+.drink-add {
+    display: inline-block;
+    background-image: url("../img/icon_add.png");
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-between(0, sm) {
+        // your code
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+    }
+}
+
+.slick-arrow {
+    width: 65px!important;
+    height: 65px!important;
+    background-repeat: no-repeat!important;
+    background-color: #99c957!important;
+    background-size: 19px 29px!important;
+    background-position: center!important;
+
+    @include media-breakpoint-between(0, lg) {
+       display: none!important;
+    }
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.slick-arrow.slick-next {
+    background-image: url("../img/slide-next.png")!important;
+    right: -80px;
+    &::before {
+        display: none;
+    }
+}
+.slick-arrow.slick-prev {
+    background-image: url("../img/slide-back.png")!important;
+    left: -80px;
+    &::before {
+        display: none;
+    }
+}
+
+.drink-info {
+    background-color: white;
+    min-height: 486px;
+    p {
+        background-color: #f7a944;
+        color: white;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    @include media-breakpoint-between(0, md) {
+        // your code
+        width: 100%;
+        min-height: 8%;
+        height: 80%;
+        background-size: 30px 30px;
+    }
+}
+
+.action-menu{
+    font-weight: bold;
+    font-family: 'Calibri', 'Source Sans Variable', 'Arial';
+
+    button {
+        font-weight: inherit;
+
+        &:first-child {
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+    
+}
+.slick-list.draggable {
+    padding-bottom: 70px;
+}
+
+  

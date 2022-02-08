@@ -1,0 +1,24 @@
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    color: #656565;
+    font-family: "Calibri", "serif" ;
+    background-color: #fff;
+}
+
+.body {
+    padding-top: 100px;
+    color: black;
+
+    @include media-breakpoint-between(0, lg) {
+        padding-top: 70px;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+}
+.error-404 {
+    height: 40vh;
+}

@@ -1,4 +1,5 @@
 const seeder = require('mongoose-seed');
+require('dotenv').config();
 
 const users = [
     {
@@ -115,7 +116,7 @@ const posts = [
     }
 ]
 
-seeder.connect('mongodb://localhost:27017/traning', function() {
+seeder.connect(process.env.DB_CONNECT_STRING, function() {
     seeder.loadModels([
         './models/user.js',
         './models/role.js',

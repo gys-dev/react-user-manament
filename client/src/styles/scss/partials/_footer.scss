@@ -1,0 +1,123 @@
+$footer-bg-color: #383735;
+footer {
+    background-color: $footer-bg-color;
+    padding: 38px 0;
+}
+
+.img-logo {
+    background-image: url("../img/logo_ft.png");
+    width: 90px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+    @include media-breakpoint-between(0, md) {
+        display: none;
+    }
+
+    @include media-breakpoint-between(0, lg) {
+        background-image: url("../img/logo_white.png");
+        width: 141px;
+        height: 71px;
+    }
+}
+
+.footer-menu {
+    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+    margin-left: 28px;
+
+    @include media-breakpoint-between(0, lg) {
+        display: none;
+    }
+    li {
+        padding-left: 0;
+        padding: 5px 0;
+
+        border-bottom: white solid 1px;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        span {
+            min-width: 100px;
+            width: 30%;
+            display: inline-block;
+            color: white;
+            vertical-align: top;
+        }
+        .footer-sub-menu {
+            display: inline-block;
+            width: 60%;
+        }
+    }
+}
+
+.footer-sub-menu {
+    a {
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+.contact-contain {
+    margin-top: 20px;
+    margin-left: 100px;
+    @include media-breakpoint-between(0, lg) {
+        margin-left: 0px;
+        margin-top: 28px;
+    }
+}
+
+.contact-infos {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    margin-left: 15px;
+    font-size: 15px;
+
+    li {
+        color: white;
+    }
+}
+
+.footer-text {
+    margin-left: 100px;
+    font-size: 13px;
+    margin-top: 8px;
+    @include media-breakpoint-between(0, lg) {
+        margin-left: 0px
+    }
+}
+.scroll-to {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+    z-index: 100;
+    cursor: pointer;
+
+    img {
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        transform: rotate(-90deg);
+    }
+
+    @include media-breakpoint-between(0, md) {
+        display: block;
+    }
+}
